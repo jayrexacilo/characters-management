@@ -4,17 +4,28 @@ This is a web application built using the CodeIgniter 4 PHP framework.
 
 ## Quick Start
 
-1. **Run Migrations**  
+1. **Copy env file**  
+   Set up the env file: (please see email for email smpt credential for testing)
+   ```bash
+   cp env .env
+   
+2. **Update the .env file**  
+   Please update the database.default variables based on your local machine mysql database setup:
+   
+3. **Composer Install**  
+   ```bash
+   composer install
+   
+4. **Run Migrations**  
    Set up the database tables by running:
    ```bash
    php spark migrate
    
-   
-2. **Start the Development Server**  
+5. **Start the Development Server**  
    Launch the app locally:
    ```bash
    php spark serve
    
-3. **Open your browser and visit**  
+6. **Open your browser and visit**  
    ```bash
    http://localhost:8080

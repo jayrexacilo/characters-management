@@ -30,13 +30,20 @@
 # DATABASE
 #--------------------------------------------------------------------
 
-# database.default.hostname = localhost
-# database.default.database = ci4
-# database.default.username = root
-# database.default.password = root
-# database.default.DBDriver = MySQLi
-# database.default.DBPrefix =
-# database.default.port = 3306
+[database]
+database.default.hostname = 127.0.0.1
+database.default.username = root
+database.default.password =
+database.default.database = character_mgmt
+database.default.DBDriver = MySQLi
+database.default.port = 3306
+
+email.protocol = "smtp"
+email.SMTPHost = "smtp.gmail.com"
+email.SMTPUser = "USER_HERE"
+email.SMTPPass = "PASSOWRD_HERE"
+email.SMTPPort = 587
+email.mailType = "html"
 
 # If you use MySQLi as tests, first update the values of Config\Database::$tests.
 # database.tests.hostname = localhost
