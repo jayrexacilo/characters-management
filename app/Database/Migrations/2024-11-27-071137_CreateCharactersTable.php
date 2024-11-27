@@ -20,6 +20,11 @@ class CreateCharactersTable extends Migration
                 'constraint' => 11,
                 'unsigned'   => true,
             ],
+            'character_id' => [
+                'type'       => 'INT',
+                'constraint' => 11,
+                'unsigned'   => true,
+            ],
             'data' => [
                 'type' => 'TEXT',
                 'null' => true,

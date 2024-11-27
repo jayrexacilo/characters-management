@@ -6,14 +6,14 @@
 
     <div class="form-container mx-auto mt-5">
         <h3 class="mb-4">Log-In</h3>
-        <form>
+        <form action="/login" method="POST">
             <div class="mb-3">
                 <label for="email" class="form-label">Email</label>
-                <input type="email" class="form-control" id="email">
+                <input type="email" class="form-control" id="email" name="email" value="<?= old('email') ?>">
             </div>
             <div class="mb-3">
                 <label for="password" class="form-label">Password</label>
-                <input type="email" class="form-control mb-5" id="password">
+                <input type="password" class="form-control mb-5" id="password" name="password">
             </div>
             <button type="submit" class="btn btn-submit w-100 text-uppercase text-sm mt-5">Log In</button>
         </form>

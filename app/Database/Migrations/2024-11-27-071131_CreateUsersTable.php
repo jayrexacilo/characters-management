@@ -32,6 +32,19 @@ class CreateUsersTable extends Migration
                 'type'       => 'VARCHAR',
                 'constraint' => 255,
             ],
+            'is_verified' => [
+                'type'       => 'TINYTEXT',
+                'null'    => true,
+            ],
+            'verification_token' => [
+                'type'       => 'VARCHAR',
+                'constraint' => 255,
+                'null'    => true,
+            ],
+            'token_expiration' => [
+                'type'       => 'DATETIME',
+                'null'    => true,
+            ],
             'created_at' => [
                 'type'    => 'DATETIME',
                 'null'    => true,
