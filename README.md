@@ -5,12 +5,13 @@ This is a web application built using the CodeIgniter 4 PHP framework.
 ## Quick Start
 
 1. **Copy env file**  
-   Set up the env file: (please see email for email smpt credential for testing)
+   Set up the env file:
    ```bash
    cp env .env
    
 2. **Update the .env file**  
    Please update the database.default variables based on your local machine mysql database setup:
+   (please see email smpt credential for testing)
    
 3. **Composer Install**  
    ```bash
