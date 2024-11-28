@@ -7,10 +7,10 @@
       </a>
       <ul class="navbar-nav ms-auto">
         <li class="nav-item me-4">
-            <?php if(uri_string() == "login") { ?>
+            <?php if(uri_string() == "login" || !session()->get('is_logged_in')) { ?>
                 <a class="nav-link" href="<?= route_to('AuthController::signup') ?>">Sign Up</a>
             <?php } ?>
-            <?php if(uri_string() == "sign-up") { ?>
+            <?php if(uri_string() == "sign-up" || !session()->get('is_logged_in')) { ?>
               <a class="nav-link" href="<?= route_to('AuthController::login') ?>">Log In</a>
             <?php } ?>
         </li>
