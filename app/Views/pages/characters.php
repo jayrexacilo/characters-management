@@ -59,7 +59,6 @@
             document.getElementById("page-nav").classList.remove("d-none");
         }
 
-
         response.results?.map((item, index) => {
             const postElement = document.createElement("div");
             const url = item.url;

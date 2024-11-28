@@ -89,7 +89,8 @@
         font-size: 14px;
         color: #6c757d;
     }
-    .character-btn-action {
+    .character-btn-action,
+    .character-btn-action:hover {
         background-color: #797979;
         color: #fff;
         padding: 8px 50px;
