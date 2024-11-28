@@ -80,7 +80,7 @@
             //<div>
             //`;
             postElement.innerHTML = `
-            <div class="col-6 col-md-4 col-lg-3">
+            <div class="character-item col-6 col-md-4 col-lg-3" data-id="${charID}">
                 <div class="card border-0 rounded-0">
                   <div class="p-3">
                     <p>ID: ${charID}</p>
