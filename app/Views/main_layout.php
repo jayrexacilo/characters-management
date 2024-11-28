@@ -109,6 +109,24 @@
         background-color: #797979;
         color: #fff;
     }
+  .card {
+    background-color: #E0E0E0;
+      height: 200px;
+      width: 150px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      color: #757575;
+    }
+    .view-more {
+      font-size: 0.9rem;
+      font-weight: bold;
+      text-decoration: none;
+      color: gray;
+    }
+    .view-more:hover {
+      text-decoration: underline;
+    }
   </style>
 
     <?= $this->include('partials/navbar.php'); ?>

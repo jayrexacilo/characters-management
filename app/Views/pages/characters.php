@@ -6,9 +6,9 @@
 
     <h2 class="text-center fw-bold my-5">Character Listing Page</h2>
 
-    <div class="w-50 mx-auto">
-        <p class="fw-bold">Characters</p>
-        <div id="list-characters" class="row gy-4">
+    <div class="w-75 mx-auto">
+        <p class="fw-bold px-5 mx-3">Characters</p>
+        <div id="list-characters" class="row gy-4 justify-content-center">
             <p id="item-placeholder" class="placeholder-glow">
               <span class="placeholder col-12"></span>
             </p>
@@ -67,13 +67,27 @@
             const lastItem = parts[parts.length - 2];
             const charID = lastItem;
             postElement.classList = "col-md-2 p-0 mx-1 h-100";
+            //postElement.innerHTML = `
+            //<div class="character-item p-3" data-id="${charID}">
+            //    <p>ID: ${charID}</p>
+            //    <p>Name: ${item.name}</p>
+            //    <p>Gender: ${item.gender}</p>
+            //<div>
+            //`;
+
             postElement.innerHTML = `
-            <div class="character-item p-3" data-id="${charID}">
-                <p>ID: ${charID}</p>
-                <p>Name: ${item.name}</p>
-                <p>Gender: ${item.gender}</p>
-            <div>
-            `;
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="card border-0 rounded-0">
+                  <div class="p-3">
+                    <p>ID: ${charID}</p>
+                    <p>NAME: ${item.name}</p>
+                    <p>GENDER: ${item.gender}</p>
+                  </div>
+                  <!--<div class="p-2">
+                    <a href="#" class="view-more">— VIEW MORE</a>
+                  </div>-->
+                </div>
+              </div>`;
             document.getElementById("list-characters").appendChild(postElement);
         });
 
