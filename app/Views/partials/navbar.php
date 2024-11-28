@@ -6,14 +6,16 @@
         <img src="https://placehold.co/120x40?text=Hello+World" alt="Logo" width="120" height="40" class="d-inline-block align-text-top">
       </a>
       <ul class="navbar-nav ms-auto">
-        <li class="nav-item me-4">
-            <?php if(uri_string() == "login" || !session()->get('is_logged_in')) { ?>
+        <?php if(uri_string() == "login" || !session()->get('is_logged_in')) { ?>
+            <li class="nav-item me-4">
                 <a class="nav-link" href="<?= route_to('AuthController::signup') ?>">Sign Up</a>
-            <?php } ?>
-            <?php if(uri_string() == "sign-up" || !session()->get('is_logged_in')) { ?>
-              <a class="nav-link" href="<?= route_to('AuthController::login') ?>">Log In</a>
-            <?php } ?>
-        </li>
+            </li>
+        <?php } ?>
+        <?php if(uri_string() == "sign-up" || !session()->get('is_logged_in')) { ?>
+            <li class="nav-item me-4">
+                <a class="nav-link" href="<?= route_to('AuthController::login') ?>">Log In</a>
+            </li>
+        <?php } ?>
         <?php if (session()->get('is_logged_in')): ?>
             <li class="nav-item me-4">
               <a class="nav-link" href="<?= route_to('Character::index') ?>">List Characters</a>
